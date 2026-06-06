@@ -1,0 +1,10 @@
+name = "ultimate-cloud-bot"
+main = "worker.js"
+compatibility_date = "2026-06-06"
+
+kv_namespaces = [
+  { binding = "DB", id = "PUT_YOUR_KV_ID_HERE" }
+]
+
+[vars]
+BOT_TOKEN = "PUT_YOUR_BOT_TOKEN"
