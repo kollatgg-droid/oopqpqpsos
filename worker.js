@@ -1,15 +1,20 @@
 export default {
-  async fetch(request, env) {
-    const url = new URL(request.url)
-
-    // =========================
-    // ROOT CHECK
-    // =========================
-    if (url.pathname === "/") {
-      return new Response("🤖 ULTIMATE BOT IS RUNNING", {
-        headers: { "content-type": "text/plain; charset=utf-8" }
-      })
+  async fetch(req) {
+    if (req.method !== "POST") {
+      return new Response("ok");
     }
+
+    try {
+      const update = await req.json();
+
+      console.log("UPDATE:", update);
+
+      return new Response("ok");
+    } catch (e) {
+      return new Response("error");
+    }
+  }
+}
 
     // =========================
     // TELEGRAM WEBHOOK
