@@ -3,8 +3,8 @@ main = "worker.js"
 compatibility_date = "2026-06-06"
 
 kv_namespaces = [
-  { binding = "DB", id = "PUT_YOUR_KV_ID_HERE" }
+  { binding = "DB", id = b1f78a44d2f94cc28ccd0007a65144e2 }
 ]
 
 [vars]
-BOT_TOKEN = "PUT_YOUR_BOT_TOKEN"
+BOT_TOKEN = 8925497603:AAE_9ONjhp7KzJgbyELPYmmcfHAScMky8NA
